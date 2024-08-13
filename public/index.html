@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secrets Encrypt</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1 style="text-align: center;">Access all the secrets</h1>
+    <form action="/submit" method="POST">
+        <label for="password">Enter the password below:</label>
+
+        <div class="container">
+        <input type="password" id="password" name="password" placeholder="Enter here..." required>
+        <span id="pasSpan">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                <circle cx="12" cy="12" r="3"></circle>
+            </svg>
+        </span>
+    </div>
+<br>
+    <input type="submit" value="Submit &rarr;">
+    </form>
+<br>
+<br>
+<br>
+<br>
+<br>
+<h3>Click the button below to get password</h3>
+<button><a href="./passwordGet.html">Next ▶</a></button>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<footer style="text-align: center;">Made with ❤️ by Hridesh</footer>
+<script>
+    const password=document.getElementById('password');
+    document.getElementById('pasSpan').addEventListener('click',()=>{
+        if(password.type==='password'){
+            password.type='text';
+        }
+        else{
+            password.type='password';
+        }
+    });
+</script>
+    <script src="../index.js" meta-charset="UTF-8"></script>
+</body>
+</html>
